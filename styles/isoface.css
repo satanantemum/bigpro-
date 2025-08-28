@@ -1,0 +1,148 @@
+.gji_side-panel {
+    margin-right: 20px;
+}
+
+.gji_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gji_image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.gji_image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gji_image-grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gji_image-grid video {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.gji_direction-placeholder {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.gji_image-grid .gji_center-image {
+    grid-column: 2;
+    grid-row: 2;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.gji_image-grid .gji_center-image img {
+    border: 3px solid red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.gji_center-image{
+    border: 0!important;
+}
+
+.gji_side-panel {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.gji_separator {
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.gji_main {
+    display: inline-block;
+}
+
+.gji_loadout-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: red;
+    margin-left: 5px;
+}
+
+.gji_loadout-add {
+    display: block;
+    margin-top: 10px;
+}
+
+.gji_loadout-select {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gji_loadout-select:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.gji_side-panel {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.gji_separator {
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.gji_main {
+    display: inline-block;
+}
+
+.gji_loadout-row {
+    cursor: pointer;
+}
+
+.gji_loadout-row.gji_selected {
+    background-color: #f0f0f0;
+}
+
+.gji_loadout-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: red;
+    margin-left: 5px;
+}
+
+.gji_loadout-add {
+    display: block;
+    margin-top: 10px;
+}
+
+.gji_load-image-btn{
+    margin:  0 0px!important;
+}
+
+.gji_toggled{
+    color: #B309FF!important;
+}
+

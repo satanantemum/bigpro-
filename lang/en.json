@@ -1,0 +1,32 @@
+{
+  "settings": {
+    "scene": {
+      "EnableIsometricMode": "Enable Isometric Mode",
+      "EnableIsometricModeNote": "Enable Isometric Mode for this scene.",
+      "EnableAutomaticMasking": "Enable Automatic Masking",
+      "EnableAutomaticMaskingNote": "Enable Automasking.",
+      "EnableTileFogGhosting": "Enable Tile Fog Ghosting 👻",
+      "EnableTileFogGhostingNote": "Enable tile ghosting for this scene, tiles seen by player will remain visible in revealed fog of war.",
+      "BackgroundImageProjection": "Background Image Projection",
+      "BackgroundImageProjectionNote": "The module uses the true isometric perspective natively, you can choose another projection which will be transformed to isometric"
+    },
+    "token": {
+      "DisableIsometricToken": "Disable Isometric Token Changes",
+      "DisableIsometricTokenNote": "Disables token isometric rotation and height change",
+      "OriginalImageProjection": "Token Image Projection",
+      "OriginalImageProjectionNote": "Choose the original image's projection."
+    },
+    "tile": {
+      "AttachTileToWall": "Attach a tile to walls",
+      "ClearAttachTileToWall": "Clears all attached walls",
+      "AttachTileToWallNote": "Attaches a tile to a wall, turning the tile into a smart tile, that hides when a token is behind it, or it's not in view",
+      "AttachTileToDoor": "Attach tile to a door",
+      "ClearAttachTileToDoor": "Clears attached door",
+      "AttachTileToDoorNote": "Attaches a smart tile to a door, that hides when a door is open <br><b> needs to be attached to at least 1 wall </b>",
+      "AttachTileToTile": "Attach tile to tile",
+      "AttachTileToTileNote": "Attaches the tile to another tile, so any effect on this tile will effect the other tiles (grouping)",
+      "AboveAlpha": "Tile above opacity",
+      "AboveAlphaNote": "Set the tile's alpha when the token is above it, defaults to invisible"
+    }
+  }
+}

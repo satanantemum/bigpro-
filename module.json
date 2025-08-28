@@ -1,0 +1,52 @@
+{
+  "id": "grape_juice-isometrics-pro",
+  "title": "Grape Juice Isometrics Pro",
+  "description": "The Isometric module for Foundry - Pro Version",
+  "authors": [
+    {
+      "name": "Grape_Juice",
+      "url": "https://www.patreon.com/foundry_grape_juice",
+      "discord": "grape_juice#2539"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "styles": ["styles/isoface.css"],
+  "scripts": ["scripts/init.js"],
+  "esmodules": ["scripts/modules/core/init.js"],
+  "relationships": {
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "compatibility": {
+          "minimum": "1.0.0.0",
+          "verified": "1.12.6.0"
+        }
+      },
+      {
+        "id": "grape_juice-isometrics",
+        "type": "module",
+        "compatibility": {
+          "minimum": "0.12.331.3",
+          "verified": "0.12.331.3"
+        }
+      }
+    ]
+  },
+  "library": true,
+  "version": "0.12.331.3",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "socket": true,
+  "url": "https://github.com/satanantemum/bigpro-",
+  "manifest": "https://github.com/satanantemum/bigpro-/releases/latest/download/module.json",
+  "download": "https://github.com/satanantemum/bigpro-/releases/latest/download/grape_juiceisometrics-pro.zip"
+}

@@ -1,0 +1,69 @@
+<form class="editable">
+    <div class="gji_side-panel">
+        <h3>Loadout Settings</h3>
+        <table>
+            <tbody>
+            {{#gji_meach loadouts}}
+            <tr class="gji_loadout-row {{#if (eq @key ../selectedLoadoutId)}}gji_selected{{/if}}" data-loadout-id="{{@key}}">
+                <td>{{this.name}}</td>
+                <td>
+                    <div class="item-controls flexrow">
+                        <a class="item-control item-toggle {{#if (eq @key ../toggledLoadoutId)}}gji_toggled{{/if}}" data-action="itemToggle" data-loadout-id="{{@key}}" >
+                            <i class="fas fa-shield-alt"></i>
+                        </a>
+                        {{#unless (eq id "default")}}
+                        <a class="item-control item-edit" data-action="itemEdit" data-loadout-id="{{@key}}" >
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <a class="item-control item-delete" data-action="itemDelete" data-loadout-id="{{@key}}">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                        {{/unless}}
+                    </div>
+                </td>
+
+            </tr>
+            {{/gji_meach}}
+            </tbody>
+        </table>
+        <button type="button" class="gji_loadout-add">Add Loadout</button>
+    </div>
+    <div class="gji_separator"></div>
+
+    <div class="gji_main">
+        <input  type="text" value="{{selectedLoadout.name}}"/>
+        <input  type="text" value="{{selectedLoadoutId}}"/>
+
+        <div class="gji_image-grid">
+            {{#each (gji_range 0 9) as |index|}}
+            <div class="gji_image-wrapper">
+                {{#gji_ifCond index 4}}
+                <img src="/modules/grape_juice-isometrics-pro/scripts/modules/core/IsoFace/assets/compass.svg" class="gji_center-image" >
+                {{else}}
+
+                {{#gji_ifVideo (lookup ../selectedLoadout.direction_images (lookup ../cardinalLookup @index)) }}
+                <video muted autoplay loop>
+                    <source src="{{ lookup ../selectedLoadout.direction_images (lookup ../cardinalLookup @index)}}"
+                            data-image-id="{{lookup ../cardinalLookup @index}}"
+                            class="gji_direction-image gji-load-image"
+                            data-direction="{{lookup direction_images index.direction}}">
+                </video>
+                {{else}}
+                <img src="{{ lookup ../selectedLoadout.direction_images (lookup ../cardinalLookup @index)}}"
+                     data-image-id="{{lookup ../cardinalLookup @index}}"
+                     class="gji_direction-image gji-load-image"
+                     data-direction="{{lookup direction_images index.direction}}">
+                {{/gji_ifVideo}}
+                {{/gji_ifCond}}
+            </div>
+            {{/each}}
+        </div>
+
+        <div class="gji_additional-options">
+            <h3>Additional Options</h3>
+            {{!-- Add your additional options here --}}
+        </div>
+
+        <button type="submit">Save Settings</button>
+    </div>
+</form>
