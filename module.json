@@ -18,7 +18,10 @@
   ],
   "styles": ["styles/isoface.css"],
   "scripts": ["scripts/init.js"],
-  "esmodules": ["scripts/modules/core/init.js"],
+  "esmodules": [
+    "scripts/modules/core/init.js",
+    "scripts/modules/core/ClientIsoToggle.js"
+  ],
   "relationships": {
     "requires": [
       {
